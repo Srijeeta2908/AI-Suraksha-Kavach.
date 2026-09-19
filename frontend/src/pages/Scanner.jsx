@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import UrlScanner from "../components/UrlScanner";
+import URLScanner from "../components/URLScanner";
 import MessageScanner from "../components/MessageScanner";
 import EmailScanner from "../components/EmailScanner";
 import ImageScanner from "../components/ImageScanner";
@@ -287,7 +287,7 @@ export default function Scanner() {
         {!result && !loading && (
           <section>
             {selectedScanner === "url" && (
-              <UrlScanner
+              <URLScanner
                 onScan={handleScan}
                 loading={loading}
               />
